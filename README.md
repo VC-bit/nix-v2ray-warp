@@ -1,6 +1,105 @@
 # nix-v2
-warp barnch
+warp branch
 
+docker
+  143  docker top
+  144  docker ps
+  145  top
+  146  df -h
+  147  docker system prune -a
+  148  docker
+  149  docker system prune -a
+  150  apt clean
+  151  journalctl --vacuum-size=100M
+  152  rm -rf /tmp/*
+  153  rm -rf /var/tmp/*
+  154  apt clean
+  155  df -h
+  156  systemctl start docker
+  157  systemctl status docker --no-pager
+  158  docker system df
+  159  docker system prune -a
+  160  df -h
+  161  curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install | sh -s -- --daemon
+  162  exit
+  163  nix-shell -p nix-info --run "nix-info -m"
+  164  git
+  165  ls
+  166  git clone https://github.com/drunkod/nix-v2ray-warp
+  167  cd nix-v2ray-warp/
+  168  ls
+  169  git switch warp
+  170  git branch -a
+  171  git branch warp
+  172  git checkout
+  173  git branch -a
+  174  git switch warp
+  175  git checkout warp
+  176  ls
+  177  git pull
+  178  cd ..
+  179  rm -rf nix-v2ray-warp/
+  180  git clone https://github.com/drunkod/nix-v2ray-warp
+  181  cd /nix/
+  182  ls
+  183  cd ..
+  184  cd home
+  185  cd ~
+  186  ls
+  187  cd nix-v2ray-warp/
+  188  git branch -a
+  189  git checkout warp
+  190  ls
+  191  nix run .#warp-setup
+  192  nix --extra-experimental-features nix-command run .#warp-setup 
+  193  nix --extra-experimental-features flakes --extra-experimental-features nix-command run .#warp-setup 
+  194  ls
+  195  nix --extra-experimental-features flakes --extra-experimental-features nix-command run .#warp-proxy 
+  196  cd ..
+  197  mv ./nix-v2ray-warp/ /nix-v2
+  198  ls
+  199  cd /
+  200  ls
+  201  mrdir work
+  202  mkdir work
+  203  mv nix-v2/ /work/nix-v2
+  204  ls
+  205  cd ~
+  206  ls
+  207  mv /work/nix-v2 /home/work/nix-v2
+  208  cd
+  209  ls
+  210  cd work && git clone https://github.com/drunkod/nix-v2ray-warp nix-v2
+  211  ls
+  212  cd nix-v2/
+  213  ls
+  214  git checkout warp
+  215  ls
+  216  nix --extra-experimental-features flakes --extra-experimental-features nix-command run .#warp-proxy
+  217  cat /root/work/nix-v2/warp/wireproxy.conf
+  218  cd /root/work
+  219  ls
+  220  cd nix-v2/
+  221  ls
+  222  nix --extra-experimental-features flakes --extra-experimental-features nix-command run .#warp-setup
+  223  nix --extra-experimental-features flakes --extra-experimental-features nix-command run .#warp-proxy
+  224  cd work/nix-v2/
+  225  nix --extra-experimental-features flakes --extra-experimental-features nix-command run .#server-warp
+  226  curl --socks5-hostname 127.0.0.1:10808 https://ifconfig.me
+  227  curl --socks5-hostname 127.0.0.1:40000 https://ifconfig.me
+  228  curl --socks5-hostname 127.0.0.1:10808 https://cloudflare.com/cdn-cgi/trace
+  229  curl --socks5-hostname 127.0.0.1:40000 https://cloudflare.com/cdn-cgi/trace
+  230  nix --extra-experimental-features flakes --extra-experimental-features nix-command run .#warp-proxy
+  231  cd work/nix-v2/
+  232  nix --extra-experimental-features flakes --extra-experimental-features nix-command run .#warp-proxy
+  233  cd work/nix-v2/
+  234  nix --extra-experimental-features flakes --extra-experimental-features nix-command run .#server-warp
+  235  ss -tulpen
+  236  nix --extra-experimental-features flakes --extra-experimental-features nix-command run .#warp-proxy
+  237  cd work/nix-v2/
+  238  nix --extra-experimental-features flakes --extra-experimental-features nix-command run .#warp-proxy
+  239  curl --socks5-hostname 127.0.0.1:40000 https://ifconfig.me
+  240  curl --socks5-hostname 127.0.0.1:40000 https://cloudflare.com/cdn-cgi/trace
 
 ss -tulnp | grep 8080
   278  ss -tulnp | grep 8080
